@@ -9,6 +9,11 @@ body{
    background-color: #2C2C2C;
 }
 
+#cap{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 #container{
     display: flex;
     padding: 70px 60px;
