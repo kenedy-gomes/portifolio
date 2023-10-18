@@ -523,6 +523,22 @@ header h1 {
       align-items: center;
       text-align: center;
     }
+
+    
+   #img img{
+    margin: 20px 0px 0px 0px;
+    width: 150px;
+    height: 150px;
+
+    } 
+   
+    #bio h2{
+        font-size: 25px;
+    } 
+    
+    #bio h4 {
+        font-size: 25px;
+    }
 }
 
  
