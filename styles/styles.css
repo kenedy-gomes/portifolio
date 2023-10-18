@@ -5,6 +5,8 @@
     color: #FFF;
 }
 
+ 
+
 body{
    background-color: #2C2C2C;
 }
@@ -17,7 +19,7 @@ body{
 #container{
     display: flex;
     padding: 40px 60px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #container-bio{
@@ -71,14 +73,19 @@ body{
 
 
 #experience{
+  box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);  
+  width: 80%;
+  border-radius: 8px;
+  padding: 16px;
   margin-bottom: 32px;
+ 
 }
 
 #experience h3{
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 30px 0px;
     color: #FFF;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -93,6 +100,21 @@ body{
     font-weight: 300;
     line-height: normal;
 }
+
+#experience-img-bio{
+    display: flex;
+}
+
+#experience-img-bio img{
+    width: 64px;
+    margin: 0px 16px 0px 0px;
+}
+
+ #linha-estilizada{
+    border: none; /* Remove a borda padrão */
+    border-top: 2px solid #5c5a5a; /* Define a cor, a espessura e o estilo da linha */
+    margin: 10px 0; /* Adiciona espaço acima e abaixo da linha (opcional) */
+ }
 
 #skill{
      display: flex;
@@ -334,8 +356,6 @@ body{
 }
 
 #footer{
-   
-  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #333;
@@ -396,6 +416,7 @@ header h1 {
   
  
   #language-selector select {
+    margin: 0px 20px 0px 0px;
     padding-left: 30px;
     background-color: #2C2C2C;
   }
@@ -442,6 +463,8 @@ header h1 {
     justify-content: center;
     margin: 34px 0px 0px 0px;
   }
+
+  
   
 
 /*RESPONSIVIDADE MOBILE*/
@@ -480,5 +503,11 @@ header h1 {
 
     #experience{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container{
+        padding: 0px;
     }
 }
