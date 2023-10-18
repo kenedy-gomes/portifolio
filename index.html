@@ -26,7 +26,7 @@
                 <img src="../assets/me.jpg" alt="me" />
               </div>
               <div id="description">
-                <h2 id="h2-bio">Hi, I'm Kenedy! 👋</h2>
+                <h2 id="typing-text">Hi, I'm Kenedy! 👋</h2>
                 <h4 id="h4-bio">Software Developer</h4>
               </div>
             </div>
@@ -283,6 +283,23 @@
         const selectedLanguage = languageSelector.value;
         updateContent(selectedLanguage);
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+      const text = "I'm Kenedy Gomes";
+      const typingText = document.querySelector(".typing-text");
+      let i = 0;
+  
+      function typeText() {
+          if (i < text.length) {
+              typingText.textContent += text.charAt(i);
+              i++;
+              setTimeout(typeText, 100); 
+          }
+      }
+  
+      typeText();
+  });
     </script>
+   
   </body>
 </html>
