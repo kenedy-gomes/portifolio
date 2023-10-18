@@ -125,3 +125,23 @@ main {
  #img img:hover{
     cursor: pointer;
  }
+
+ @media screen and (max-width: 1115px) {
+    #project{
+        max-width: 300px;
+        width: 100%;
+    }
+
+    #img{
+        margin: 100px 0px 0px 10px;
+    }
+
+    #btn button{
+        width: 125px;
+    }
+
+    #btn button:nth-child(1){
+        margin: 0px 5px 0px 5px;
+        height: 40px;
+    }
+}
