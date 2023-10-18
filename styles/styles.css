@@ -16,7 +16,7 @@ body{
 
 #container{
     display: flex;
-    padding: 70px 60px;
+    padding: 40px 60px;
     justify-content: space-evenly;
 }
 
