@@ -33,49 +33,58 @@
           </div>
           <div id="experience">
             <h3 id="h3-experience">Experiência</h3>
-            <p id="p-experience">
+            <p>
               <div id="experience-img-bio">
                 <a target="_blank" href="https://www.linkedin.com/company/digitaliza-ai/"><img src="./assets/fotos-projetos/digitalizaai.jpg" alt="digitaliza"></a>
                 <div class="bio-experience">
-                  <h2>desenvolvedor fullstack</h2>
-                  <h3>Digitaliza.aí</h3>
-                  <p>2023-09-27 - atual</p>
-                  <p>Experiencia em desenvolvimento de paginas web, ultilizando ejs e node.js</p><br>
-                  <p><span>Competências:</span> Git, HTML, CSS, JavaScript e node.JS</p>
+                  <h2  id="cargo">desenvolvedor fullstack</h2>
+                  <h3  id="empresa">Digitaliza.aí</h3>
+                  <p id="data">2023-09-27 - atual</p>
+                  <p id="p-experience1">Experiencia em desenvolvimento de paginas web, ultilizando ejs e node.js</p><br>
+                  <div id="competencias">
+                    <p style="font-weight: bold; color: white; margin: 0px 8px 0px 0px;" id="comp1">Competências:</p> <p id="competencia1"> Git, HTML, CSS, JavaScript e node.JS</p>
+                  </div>
+               
                  
                 </div>
               </div>
               <hr id="linha-estilizada">
             </p>
             <br>
-            <p id="p-experience2">
+            <p>
               <div id="experience-img-bio">
                 <a target="_blank" href="https://www.linkedin.com/company/supera-tecnologia/"><img src="./assets/fotos-projetos/supera_tecnologia_logo.jpg" alt="digitaliza"></a>
                 <div class="bio-experience">
-                  <h2>Desenvolvedor web Treinee</h2>
-                  <h3>Supera Inovação em Tecnologia</h3>
+                  <h2 id="cargo2">Desenvolvedor web Treinee</h2>
+                  <h3 id="empresa2">Supera Inovação em Tecnologia</h3>
                   <p>2022-03-01 - 2022-10-15</p>
-                  <p>experiência em desenvolver paginas web ultilizando ReactJs, Angular, springboot e powerBI</p><br>
-                  <p><span>Competências:</span> Git, ReactJS, Angular, springboot e power BI</p>
+                  <p id="p-experience2">experiência em desenvolver paginas web ultilizando ReactJs, Angular, springboot e powerBI</p><br>
+                  <div id="competencias">
+                    <p style="font-weight: bold; color: white; margin: 0px 8px 0px 0px;" id="comp2">Competências:</p><p id="competencia2"> Git, ReactJS, Angular, springboot e power BI</p>
+                  </div>
+                
                 
                 </div>
               </div>
               <hr id="linha-estilizada">
             </p>
             <br id="br-linha">
-            <p id="p-experience3">
+            <p>
               <div id="experience-img-bio">
                 <a target="_blank" href="https://www.linkedin.com/company/sistemafiegoficial/"><img src="./assets/fotos-projetos/sistemafiegoficial_logo.jpg" alt="digitaliza"></a>
                 <div class="bio-experience">
-                  <h2>Estagio em banco de dados</h2>
-                  <h3>FIEG/Casa da Indústria / SESI</h3>
+                  <h2  id="cargo3">Estagio em banco de dados</h2>
+                  <h3 id="empresa3">FIEG/Casa da Indústria / SESI</h3>
                   <p>2021-08-01 - 2023-06-30</p>
-                  <p>Experiencia em banco de dados Mysql e springboot</p><br>
-                  <p><span>Competências:</span> Git, ReactJS, Angular, springboot e power BI</p>
+                  <p id="p-experience3">Experiencia em banco de dados Mysql e springboot</p><br>
+                  <div id="competencias">
+                    <p style="font-weight: bold; color: white; margin: 0px 8px 0px 0px;" id="comp3">Competências:</p> <p id="competencia3"> Banco de dados mysql, springboot</p>
+                  </div>
+                 
                  
                 </div>
               </div>
-              <hr id="linha-estilizada">
+              <!--<hr id="linha-estilizada">-->
             </p>
             
           </div>
@@ -189,14 +198,25 @@
     <script>
       const translations = {
         pt: {
+          cargo: "desenvolvedor fullstack",
+          cargo2: "Desenvolvedor web Treinee",
+          cargo3: "Estagio em banco de dados", 
+          empresa: "digitaliza.aí",
+          empresa2: "Supera Inovação em Tecnologia",
+          empresa3: "FIEG/Casa da Indústria / SESI",
+          pexperience1: "Experiencia em desenvolvimento de paginas web, ultilizando ejs e node.js",
+          pexperience2: "experiência em desenvolver paginas web ultilizando ReactJs, Angular, springboot e powerBI",
+          pexperience3: "Experiencia em banco de dados Mysql e springboot",
+          competencia1: "Git, HTML, CSS, JavaScript e node.JS",
+          competencia2: "ReactJs, Angular, springboot e powerBI",
+          competencia3: "Banco de dados mysql, springboot",
+          comp1: "Competencias:",
+          comp2: "Competencias:",
+          comp3: "Competencias:",
           languageLabel: "Selecione seu idioma:",
           h2Bio: "Oi, sou Kenedy! 👋",
           h4Bio: "Desenvolvedor de Software",
           h3Experience: "Experiência",
-          pExperience:
-            "3 meses de experiência na digitizaaí como desenvolvedor fullstack, utilizando ejs no frontend e express no backend",
-          pExperience2: "8 meses de experiência em super tecnologia e inovação, tecnologías utilizadas: ReactJs, Angular, springboot e powerBI",
-          pExperience3: "2 anos de experiência na FIEG/Casa da Indústria / SESI tecnologías e gestão de informações, tecnologías utilizadas: Mysql, ReactJs",
           pSkillJS: "1 ano",
           pSkillSPRING: "1 ano",
           pSkillEJS: "3 meses",
@@ -219,10 +239,22 @@
           h2Bio: "Hi, I'm Kenedy! 👋",
           h4Bio: "Software Developer",
           h3Experience: "Experience",
-          pExperience:
-            "3 months of experience at digitizaaí as a fullstack, using ejs front-end and express backend",
-          pExperience2: "8 Months of experience in super technology and innovation, technologies used: ReactJs, Angular, springboot and powerBI",
-          pExperience3: "2 Years of experience at FIEG/Casa da Indústria / SESI technology and information management, technologies used: Mysql, ReactJs", 
+          cargo: "fullstack developer",
+          cargo2: "fullstack developer treinee",
+          cargo3: "stage in database",
+          empresa: "digitaliza.aí",
+          empresa2: "Supera Inovação em Tecnologia",
+          empresa3: "FIEG/Casa da Indústria / SESI", 
+          pexperience1: "Experience in developing web pages using ejs and node.js",
+          pexperience2: "experience in developing web pages using ReactJs, Angular, springboot and powerBI",
+          pexperience3: "Experience in database Mysql and springboot",
+          competencia1: " Git, HTML, CSS, JavaScript and node.JS",
+          competencia2: "ReactJs, Angular, springboot and powerBI",
+          competencia3: "Mysql database and springboot",
+          comp1: "Skills",
+          comp2: "Skills",
+          comp3: "Skills",
+        
           pSkillJS: "1 year",
           pSkillSPRING: "1 year",
           pSkillEJS: "3 months",
@@ -244,10 +276,21 @@
           h2Bio: "¡Hola, soy Kenedy! 👋",
           h4Bio: "Desarrollador de Software",
           h3Experience: "Experiencia",
-          pExperience:
-            "3 meses de experiencia en digitizaaí como desarrollador fullstack, utilizando ejs en el frontend y express en el backend",
-          pExperience2: "8 meses de experiencia en super tecnología y innovación, tecnologías utilizadas: ReactJs, Angular, springboot y powerBI",
-          pExperience3: "2 años de experiencia en FIEG/Casa da Industria / SESI tecnologías y administración de información, tecnologías utilizadas: Mysql, ReactJs",    
+          cargo: "desarrollador fullstack",
+          cargo2: "Desarrollador web Treinee",
+          cargo3: "Estagio en base de datos",
+          empresa: "digitaliza.aí",
+          empresa2: "Supera Inovação em Tecnologia",
+          empresa3: "FIEG/Casa da Indústria / SESI",
+          pexperience1: "Experiencia en desarollo de páginas web, ultilizando ejs y node.js",
+          pexperience2: "experiencia en desarollo de páginas web ultilizando ReactJs, Angular, springboot y powerBI",
+          pexperience3: "Experiencia en base de datos Mysql y springboot",
+          competencia1: "Git, HTML, CSS, JavaScript y node.JS",
+          competencia2: "ReactJs, Angular, springboot y powerBI",
+          competencia3: "Banco de datos mysql y springboot",
+          comp1: "Competencies:",
+          comp2: "Competencies:",
+          comp3: "Competencies:",
           pSkillJS: "1 año",
           pSkillSPRING: "1 año",
           pSkillEJS: "3 meses",
@@ -272,9 +315,21 @@
       const h2Bio = document.getElementById("h2-bio");
       const h4Bio = document.getElementById("h4-bio");
       const h3Experience = document.getElementById("h3-experience");
-      const pExperience = document.getElementById("p-experience");
-      const pExperience2 = document.getElementById("p-experience2");
-      const pExperience3 = document.getElementById("p-experience3");
+      const cargo = document.getElementById("cargo");
+      const cargo2 = document.getElementById("cargo2");
+      const cargo3 = document.getElementById("cargo3");
+      const empresa = document.getElementById("empresa");
+      const empresa2 = document.getElementById("empresa2");
+      const empresa3 = document.getElementById("empresa3");
+      const pexperience1 = document.getElementById("p-experience1");
+      const pexperience2 = document.getElementById("p-experience2");
+      const pexperience3 = document.getElementById("p-experience3");
+      const competencia1 = document.getElementById("competencia1");
+      const competencia2 = document.getElementById("competencia2");
+      const competencia3 = document.getElementById("competencia3");
+      const comp1 = document.getElementById("comp1");
+      const comp2 = document.getElementById("comp2");
+      const comp3 = document.getElementById("comp3");
       const pSkillJS = document.getElementById("p-skill-js");
       const pSkillSPRING = document.getElementById("p-skill-spring");
       const pSkillREACT = document.getElementById("p-skill-react");
@@ -295,9 +350,21 @@
         h2Bio.textContent = translations[selectedLanguage].h2Bio;
         h4Bio.textContent = translations[selectedLanguage].h4Bio;
         h3Experience.textContent = translations[selectedLanguage].h3Experience;
-        pExperience.textContent = translations[selectedLanguage].pExperience;
-        pExperience2.textContent = translations[selectedLanguage].pExperience2;
-        pExperience3.textContent = translations[selectedLanguage].pExperience3;
+        cargo.textContent = translations[selectedLanguage].cargo;
+        cargo2.textContent = translations[selectedLanguage].cargo2;
+        cargo3.textContent = translations[selectedLanguage].cargo3;
+        empresa.textContent = translations[selectedLanguage].empresa;
+        empresa2.textContent = translations[selectedLanguage].empresa2;
+        empresa3.textContent = translations[selectedLanguage].empresa3;
+        pexperience1.textContent = translations[selectedLanguage].pexperience1;
+        pexperience2.textContent = translations[selectedLanguage].pexperience2;
+        pexperience3.textContent = translations[selectedLanguage].pexperience3;
+        competencia1.textContent = translations[selectedLanguage].competencia1;
+        competencia2.textContent = translations[selectedLanguage].competencia2;
+        competencia3.textContent = translations[selectedLanguage].competencia3;
+        comp1.textContent = translations[selectedLanguage].comp1;
+        comp2.textContent = translations[selectedLanguage].comp2;
+        comp3.textContent = translations[selectedLanguage].comp3;
         pSkillJS.textContent = translations[selectedLanguage].pSkillJS;
         pSkillSPRING.textContent = translations[selectedLanguage].pSkillSPRING;
         pSkillREACT.textContent = translations[selectedLanguage].pSkillREACT;

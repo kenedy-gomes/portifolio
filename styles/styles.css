@@ -74,7 +74,7 @@ body{
 
 #experience{
   box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);  
-  width: 80%;
+  width: 90%;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 32px;
@@ -440,7 +440,9 @@ header h1 {
      
   }
 
-
+  #competencias{
+    display: flex;
+  }
  
 
   #projects-btn button{
