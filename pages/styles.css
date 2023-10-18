@@ -1,0 +1,124 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #2C2C2C;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    margin: 0px 0px 120px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+#project {
+    border-radius: 8px;
+    text-align: center;
+    width: 600px;
+    background-color: #2C2C2C;
+    margin: 20px;
+    padding: 20px;
+    
+    box-shadow: 0 0 5px rgba(226, 225, 225, 0.2);
+}
+
+#project img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+#project-description h2 {
+     
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+#project-description p {
+    margin: 16px;
+    margin-top: 10px;
+}
+
+#btn button{
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    width: 250px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
+    
+}
+
+#btn button:nth-child(1){
+    margin: 0px 30px 0px 0px;
+}
+
+#btn button:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#footer{
+    position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+}
+    
+    #footer p{
+        color: white;
+ }
+
+
+ #img{
+    margin: 20px 0px 0px 60px;
+ }
+
+
+ #img img{
+    width: 40px;
+ }   
+
+ #img img:hover{
+    cursor: pointer;
+ }

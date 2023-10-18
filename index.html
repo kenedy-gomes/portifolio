@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/styles.css" />
-    <title>Portifolio</title>
+    <title>Portfolio</title>
   </head>
 
   <body>
+    <div id="language-selector">
+      <label for="language"></label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="pt">Português</option>
+      </select>
+    </div>
+
     <div id="cap">
       <div id="container">
         <div id="container-bio">
@@ -17,14 +26,14 @@
                 <img src="../assets/me.jpg" alt="me" />
               </div>
               <div id="description">
-                <h2>Hi, i´m Kenedy! 👋</h2>
-                <h4>Software Developer</h4>
+                <h2 id="h2-bio">Hi, I'm Kenedy! 👋</h2>
+                <h4 id="h4-bio">Software Developer</h4>
               </div>
             </div>
           </div>
           <div id="experience">
-            <h3>Experience</h3>
-            <p>
+            <h3 id="h3-experience">Experience</h3>
+            <p id="p-experience">
               3 months of experience at digitizaaí as a fullstack, using ejs
               front-end and express backend
             </p>
@@ -34,50 +43,56 @@
           <div class="container-skills">
             <div id="skill">
               <img src="../assets/icons8-js.svg" alt="JS" />
-              <p>1 year</p>
+              <p id="p-skill-js">1 year</p>
             </div>
 
             <div id="skill">
               <img src="../assets/icons8-ejs.svg" alt="EJS" />
-              <p>3 months</p>
+              <p id="p-skill-ejs">3 months</p>
             </div>
 
             <div id="skill">
               <img src="../assets/icons8-html.svg" alt="HTML" />
-              <p>2 year</p>
+              <p id="p-skill-html">2 years</p>
             </div>
 
             <div id="skill">
               <img src="../assets/icons8-css.svg" alt="CSS" />
-              <p>2 year</p>
+              <p id="p-skill-css">2 years</p>
             </div>
           </div>
         </div>
         <div id="container-description">
           <div id="container-skills">
-            <p>Languages</p>
+            <p id="p-languages">Languages</p>
             <div id="languages-1">
               <img src="../assets/🇺🇸.png" alt="us" />
-              <h2>EN Basic</h2>
+              <h2 id="h2-en">EN Basic</h2>
               <br />
             </div>
 
             <div id="languages-2">
               <img src="../assets/🇧🇷.png" alt="br" />
-              <h2>PT-BR Native Speaker</h2>
+              <h2 id="h2-pt">PT-BR Native Speaker</h2>
             </div>
           </div>
 
           <div id="container-education">
-            <p>Education</p>
+            <p id="p-education">Education</p>
             <div id="education">
               <img src="../assets/🎓.png" alt="education" />
-              <p>
+              <p id="p-education-details">
                 Analysis and development of systems at Estácio de Sá University
               </p>
             </div>
           </div>
-
+          <div id="container-projects">
+            <p>Meus Projetos</p>
+            <div id="projects-btn">
+              <button onclick="window.location.href='../pages/projetos.html'">Projetos</button>
+            </div>
+              
+          </div>
           <div id="container-redes-sociais">
             <div id="redes">
               <div id="redes-sociais">
@@ -116,10 +131,116 @@
           </div>
         </div>
       </div>
-
     </div>
     <footer id="footer">
-      <p>© 2023 Kenedy Gomes</p>
+      <p id="footer-text">© 2023 Kenedy Gomes</p>
     </footer>
+
+    <script>
+      const translations = {
+        en: {
+          languageLabel: "Select your language:",
+          h2Bio: "Hi, I'm Kenedy! 👋",
+          h4Bio: "Software Developer",
+          h3Experience: "Experience",
+          pExperience:
+            "3 months of experience at digitizaaí as a fullstack, using ejs front-end and express backend",
+          pSkillJS: "1 year",
+          pSkillEJS: "3 months",
+          pSkillHTML: "2 years",
+          pSkillCSS: "2 years",
+          pLanguages: "Languages",
+          h2En: "EN Basic",
+          h2Pt: "PT-BR Native Speaker",
+          pEducation: "Education",
+          pEducationDetails:
+            "Analysis and development of systems at Estácio de Sá University",
+          contactMe: "CONTACT ME",
+          footer: "© 2023 Kenedy Gomes",
+        },
+        es: {
+          languageLabel: "Selecciona tu idioma:",
+          h2Bio: "¡Hola, soy Kenedy! 👋",
+          h4Bio: "Desarrollador de Software",
+          h3Experience: "Experiencia",
+          pExperience:
+            "3 meses de experiencia en digitizaaí como desarrollador fullstack, utilizando ejs en el frontend y express en el backend",
+          pSkillJS: "1 año",
+          pSkillEJS: "3 meses",
+          pSkillHTML: "2 años",
+          pSkillCSS: "2 años",
+          pLanguages: "Idiomas",
+          h2En: "EN Básico",
+          h2Pt: "Hablante Nativo de PT-BR",
+          pEducation: "Educación",
+          pEducationDetails:
+            "Análisis y desarrollo de sistemas en la Universidad Estácio de Sá",
+          contactMe: "CONTÁCTAME",
+          footer: "© 2023 Kenedy Gomes",
+        },
+        pt: {
+          languageLabel: "Selecione seu idioma:",
+          h2Bio: "Oi, sou Kenedy! 👋",
+          h4Bio: "Desenvolvedor de Software",
+          h3Experience: "Experiência",
+          pExperience:
+            "3 meses de experiência na digitizaaí como desenvolvedor fullstack, utilizando ejs no frontend e express no backend",
+          pSkillJS: "1 ano",
+          pSkillEJS: "3 meses",
+          pSkillHTML: "2 anos",
+          pSkillCSS: "2 anos",
+          pLanguages: "Idiomas",
+          h2En: "EN Básico",
+          h2Pt: "Falante Nativo de PT-BR",
+          pEducation: "Educação",
+          pEducationDetails:
+            "Análise e desenvolvimento de sistemas na Universidade Estácio de Sá",
+          contactMe: "ENTRE EM CONTATO",
+          footer: "© 2023 Kenedy Gomes",
+        },
+      };
+
+      const languageSelector = document.getElementById("language");
+      const languageLabel = document.querySelector('label[for="language"]');
+      const h2Bio = document.getElementById("h2-bio");
+      const h4Bio = document.getElementById("h4-bio");
+      const h3Experience = document.getElementById("h3-experience");
+      const pExperience = document.getElementById("p-experience");
+      const pSkillJS = document.getElementById("p-skill-js");
+      const pSkillEJS = document.getElementById("p-skill-ejs");
+      const pSkillHTML = document.getElementById("p-skill-html");
+      const pSkillCSS = document.getElementById("p-skill-css");
+      const pLanguages = document.getElementById("p-languages");
+      const h2En = document.getElementById("h2-en");
+      const h2Pt = document.getElementById("h2-pt");
+      const pEducation = document.getElementById("p-education");
+      const pEducationDetails = document.getElementById("p-education-details");
+      const contactMeLink = document.getElementById("contact-me-link");
+      const footerText = document.getElementById("footer-text");
+
+      function updateContent(selectedLanguage) {
+        languageLabel.textContent = translations[selectedLanguage].languageLabel;
+        h2Bio.textContent = translations[selectedLanguage].h2Bio;
+        h4Bio.textContent = translations[selectedLanguage].h4Bio;
+        h3Experience.textContent = translations[selectedLanguage].h3Experience;
+        pExperience.textContent = translations[selectedLanguage].pExperience;
+        pSkillJS.textContent = translations[selectedLanguage].pSkillJS;
+        pSkillEJS.textContent = translations[selectedLanguage].pSkillEJS;
+        pSkillHTML.textContent = translations[selectedLanguage].pSkillHTML;
+        pSkillCSS.textContent = translations[selectedLanguage].pSkillCSS;
+        pLanguages.textContent = translations[selectedLanguage].pLanguages;
+        h2En.textContent = translations[selectedLanguage].h2En;
+        h2Pt.textContent = translations[selectedLanguage].h2Pt;
+        pEducation.textContent = translations[selectedLanguage].pEducation;
+        pEducationDetails.textContent = translations[selectedLanguage].pEducationDetails;
+        contactMeLink.textContent = translations[selectedLanguage].contactMe;
+        footerText.textContent = translations[selectedLanguage].footer;
+      }
+
+      languageSelector.addEventListener("change", function () {
+        const selectedLanguage = languageSelector.value;
+        updateContent(selectedLanguage);
+      });
+    </script>
   </body>
 </html>
